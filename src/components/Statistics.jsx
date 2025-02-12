@@ -7,9 +7,7 @@ import {
   LinearScale,
   LineElement,
   PointElement,
-  scales,
   Ticks,
-  Title,
   Tooltip,
 } from "chart.js";
 import { Line } from "react-chartjs-2";
@@ -73,18 +71,18 @@ const Statistics = () => {
     },
     scales: {
       x: {
-        Ticks: { color: "#6B7280" }, // Tailwind Gray 500
+        Ticks: { color: "#6B7280" }, 
         grid: { display: true },
       },
       y: {
-        title: { // ✅ Added Y-axis title
+        title: { 
             display: true,
-            text: "Amount",  // This will show "Amount" on Y-axis
-            color: "#374151", // Tailwind Gray 700
+            text: "Amount",  
+            color: "#374151", 
             font: { size: 14 },
           },
-        Ticks: { color: "#6B7280" }, // Tailwind Gray 500
-        grid: { color: "#E5E7EB" }, // Tailwind Gray 200
+        Ticks: { color: "#6B7280" }, 
+        grid: { color: "#E5E7EB" }, 
       },
     },
   };

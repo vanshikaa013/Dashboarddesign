@@ -65,7 +65,7 @@ const TopProducts = () => {
       </div>
       <div>
         {products.map((product) => (
-          <div key={product.id} className="flex px-1 py-2  justify-between ">
+          <div key={product.id} className="flex px-1 py-2  justify-between hover:bg-gray-100 ">
             <span className="flex space-x-1">
               <img className="h-10" src={product.icon} alt="product" />
               <div>

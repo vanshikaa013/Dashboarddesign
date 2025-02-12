@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { GiAbacus } from "react-icons/gi";
+import { FaTrashCan } from "react-icons/fa6";
+import { FaEye } from "react-icons/fa";
 
 const RecentOrders = () => {
   const [orders, setOrders] = useState([
@@ -164,13 +166,13 @@ const RecentOrders = () => {
                 </td>
                 <td className="p-3 text-center border-b border-gray-100">
                   <button className="text-blue-500 hover:text-blue-700 mr-2">
-                    👁️
+                  <FaEye />
                   </button>
                   <button
                     onClick={() => handleDelete(order.id)}
                     className="text-red-500 hover:text-red-700"
                   >
-                    ⛔
+                    <FaTrashCan/>
                   </button>
                 </td>
               </tr>
