@@ -89,34 +89,33 @@ const RecentOrders = () => {
 
   return (
     <div className="bg-white shadow-md p-4 sm:col-span-2 lg:col-span-2">
-      <div className="flex justify-between">
-        <span className="flex justify-between items-center w-[30%]">
-          <h1 className="font-semibold text-md">Recent Orders</h1>
-          <p className="bg-green-100 text-green-500 rounded-md px-2">
-            +2 Orders
-          </p>
-        </span>
-        <div className="space-x-2">
-          {/* select date */}
-          <button>
-            <input
-              type="date"
-              className="border border-gray-300 text-gray-400 rounded-md px-2 py-1  hover:bg-gray-200"
-            />
-          </button>
+      <div className="flex flex-wrap justify-between items-center gap-3">
+  <div className="flex justify-between items-center w-full sm:w-[50%] md:w-[30%]">
+    <h1 className="font-semibold text-md">Recent Orders</h1>
+    <p className="bg-green-100 text-green-500 rounded-md px-2">+2 Orders</p>
+  </div>
 
-          {/* Filters button */}
-          <button className="px-3 py-1.5 bg-white border border-gray-300 rounded-md text-sm text-gray-400 hover:bg-gray-200">
-            <div className="flex items-center justify-center">
-              <GiAbacus /> &nbsp; Filters
-            </div>
-          </button>
-          {/* See All */}
-          <button className="bg-red-200 px-2 py-1 rounded-md text-red-600 font-semibold hover:bg-red-400 hover:text-white">
-            See All
-          </button>
-        </div>
-      </div>
+  <div className="flex flex-wrap gap-2">
+    {/* Select date */}
+    <button>
+      <input
+        type="date"
+        className="border border-gray-300 text-gray-400 rounded-md px-2 py-1 hover:bg-gray-200 w-full sm:w-auto"
+      />
+    </button>
+
+    {/* Filters button */}
+    <button className="px-3 py-1.5 bg-white border border-gray-300 rounded-md text-sm text-gray-400 hover:bg-gray-200 flex items-center">
+      <GiAbacus /> &nbsp; Filters
+    </button>
+
+    {/* See All */}
+    <button className="bg-red-200 px-2 py-1 rounded-md text-red-600 font-semibold hover:bg-red-400 hover:text-white">
+      See All
+    </button>
+  </div>
+</div>
+
 
       <div className="overflow-x-auto">
         <table className="min-w-full border-collapse border border-gray-200 mt-6">

@@ -49,8 +49,8 @@ const Statistics = () => {
       {
         label: "Sales",
         data: [400 , 500 ,600 , 550 , 650 ,300 , 700 , 500 , 450 , 650 , 550 , 1000],
-        borderColor: "#FBBF24", // Orange
-        backgroundColor: "rgba(251, 191, 36, 0.1)", // Transparent orange
+        borderColor: "#FBBF24", 
+        backgroundColor: "rgba(251, 191, 36, 0.1)", 
         tension: 0.7,
         fill: true,
       },
